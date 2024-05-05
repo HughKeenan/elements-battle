@@ -7,16 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Elements Battle!</h1>
-    </header>
+    <header>Elements Battle</header>
     <main>
-        <h2>Rules</h2>
-        <span>Water douses Fire | Fire melts Steel</span>
-        <span>Steel deflects Air | Air erodes Earth</span>
-        <span>Earth absorbs Water | Water rusts Steel</span>
-        <span>Steel breaks Earth | Earth  smothers Fire</span>
-        <span>Fire burns Air | Air freezes Water</span>
+        <div>
+            <h1 id = "title">Rules</h1>
+        </div>
+        <div id = "rules">
+            <p>Water douses Fire | Fire melts Steel</p>
+            <p>Steel deflects Air | Air erodes Earth</p>
+            <p>Earth absorbs Water | Water rusts Steel</p>
+            <p>Steel breaks Earth | Earth  smothers Fire</p>
+            <p>Fire burns Air | Air freezes Water</p>
+        </div>
+        <div id = "choices">
+            <button>Water</button>
+            <button>Fire</button>
+            <button>Earth</button>
+            <button>Air</button>
+            <button>Steel</button>
+        </div>
+        <div id = "gameArea">
+            <div class = choicePicture>
+                <p>Your Choice</p>
+                <div>
+                    <img src="assets/images/water.webp" alt = "Water">
+                </div>
+            </div>
+            <div class = choicePicture>
+                <p>Computer Choice</p>
+                <img src="assets/images/water.webp" alt = "Water">
+            </div>
+        </div>
+        <div id = "scoreArea">
+            <div>
+                <span>Your Score:</span>
+            </div>
+            <div>
+                <span>Computer Score:</span>
+            </div>
+        </div> 
     </main>
     <script src="assets/script.js"></script>
 </body>

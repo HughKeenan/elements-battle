@@ -1,6 +1,59 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Jaro:opsz@6..72&family=Signika+Negative:wght@300..700&display=swap');
 
-h1{
-    font-family: "Anton";
+
+/*General Rules*/
+main{
+    border: 2px solid;
+    background-color:darkgrey;
 }
+
+h1, p, button, span{
+    font-family: Signika Negative;
+}
+
+
+header{
+    font-family: Anton;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+#rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#gameArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.choicePicture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scoreArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
