@@ -1,1 +1,1 @@
-console.log('successful test')
+const options = ["water","earth","fire","air","steel"]

@@ -12,7 +12,6 @@ h1, p, button, span{
     font-family: Signika Negative;
 }
 
-
 header{
     font-family: Anton;
     display: flex;
@@ -39,9 +38,8 @@ header{
 
 #gameArea{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 15px;
 }
 
 .choicePicture{
@@ -57,3 +55,11 @@ header{
     margin-top: 15px;
 }
 
+/*Media query for tablets and larger devices*/
+@media (min-width: 768px){
+    #gameArea{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
