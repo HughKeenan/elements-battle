@@ -30,7 +30,7 @@ header{
     align-items: center;
 }
 
-#choices{
+#options{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
