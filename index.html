@@ -20,32 +20,32 @@
             <p>Fire burns Air | Air freezes Water</p>
         </div>
         <div id = "choices">
-            <button>Water</button>
-            <button>Fire</button>
-            <button>Earth</button>
-            <button>Air</button>
-            <button>Steel</button>
+            <button onclick = "water">Water</button>
+            <button onclick = "fire">Fire</button>
+            <button onclick = "earth">Earth</button>
+            <button onclick = "air">Air</button>
+            <button onclick = "steel">Steel</button>
         </div>
         <div id = "gameArea">
-            <div class = choicePicture>
+            <div id = playerSelects>
                 <p>Your Choice</p>
                 <div>
                     <img src="assets/images/water.webp" alt = "Water"> 
                 </div>
             </div>
-            <div class = choicePicture>
+            <div id = computerSelects>
                 <p>Computer Choice</p>
                 <div>
                     <img src="assets/images/water.webp" alt = "Water">
                 </div>    
             </div>
         </div>
-        <div id = "scoreArea">
-            <div>
-                <span>Your Score:</span>
+        <div id = scoreArea>
+            <div id = playerScore>Your Score:
+                <span>0</span>
             </div>
-            <div>
-                <span>Computer Score:</span>
+            <div id = computerScore>Computer Score:
+                <span>0</span>
             </div>
         </div> 
     </main>

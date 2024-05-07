@@ -8,7 +8,7 @@ main{
     background-color:darkgrey;
 }
 
-h1, p, button, span{
+h1, p, button, span, div{
     font-family: Signika Negative;
 }
 
@@ -42,13 +42,13 @@ header{
     justify-content: space-evenly;
 }
 
-.choicePicture{
+#playerSelects, #computerSelects{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#scoreArea{
+#scoreArea, #playerScore, #computerScore{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
