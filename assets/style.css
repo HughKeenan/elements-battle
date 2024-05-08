@@ -42,38 +42,12 @@ header{
     justify-content: space-evenly;
 }
 
-.questionmark{
+.inactive{
+    display: none;
+}
+
+.active{
     display: block;
-    height: 10rem;
-    width: 10rem;
-}
-
-.waterpic{
-    display: none;
-    height: 10rem;
-    width: 10rem;
-}
-
-.firepic{
-    display: none;
-    height: 10rem;
-    width: 10rem;
-}
-
-.earthpic{
-    display: none;
-    height: 10rem;
-    width: 10rem;
-}
-
-.airpic{
-    display: none;
-    height: 10rem;
-    width: 10rem;
-}
-
-.steelpic{
-    display: none;
     height: 10rem;
     width: 10rem;
 }

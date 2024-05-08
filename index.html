@@ -20,33 +20,33 @@
             <p>Fire burns Air | Air freezes Water</p>
         </div>
         <div id = "options">
-            <button onclick = "gameManager('water'), setPicture(playerChoice)">Water</button>
-            <button onclick = "gameManager('fire')">Fire</button>
-            <button onclick = "gameManager('earth')">Earth</button>
-            <button onclick = "gameManager('air')">Air</button>
-            <button onclick = "gameManager('steel')">Steel</button>
+            <button onclick = "gameManager('water'), setPicture('water')">Water</button>
+            <button onclick = "gameManager('fire'), setPicture('fire')">Fire</button>
+            <button onclick = "gameManager('earth'), setPicture('earth')">Earth</button>
+            <button onclick = "gameManager('air'), setPicture('air')">Air</button>
+            <button onclick = "gameManager('steel'), setPicture('steel')">Steel</button>
         </div>
         <div id = "gameArea">
             <div id = playerSelects>
                 <p>Your Choice</p>
                 <div>
-                    <img class = "questionmark" src = "assets/images/questionmark.png" alt = "Question Mark">
-                    <img class = "waterpic" src="assets/images/water.webp" alt = "Water">
-                    <img class = "firepic" src = "assets/images/fire.webp" alt = "Fire">
-                    <img class = "earthpic" src = "assets/images/earth.webp" alt = "Earth">
-                    <img class = "airpic" src = "assets/images/air.webp" alt = "Air">
-                    <img class = "steelpic" src = "assets/images/steel.webp" alt = "Steel"> 
+                    <img id = "questionmark" class = "active" src = "assets/images/questionmark.png" alt = "Question Mark">
+                    <img id = "water" class = "inactive" src="assets/images/water.webp" alt = "Water">
+                    <img id = "fire" class = "inactive" src = "assets/images/fire.webp" alt = "Fire">
+                    <img id = "earth" class = "inactive" src = "assets/images/earth.webp" alt = "Earth">
+                    <img id = "air" class = "inactive" src = "assets/images/air.webp" alt = "Air">
+                    <img id = "steel" class = "inactive" src = "assets/images/steel.webp" alt = "Steel"> 
                 </div>
             </div>
             <div id = computerSelects>
                 <p>Computer Choice</p>
                 <div>
-                    <img class = "questionmark" src = "assets/images/questionmark.png" alt = "Question Mark">
-                    <img class = waterpic src="assets/images/water.webp" alt = "Water">
-                    <img class = "firepic" src = "assets/images/fire.webp" alt = "Fire">
-                    <img class = "earthpic" src = "assets/images/earth.webp" alt = "Earth">
-                    <img class = "airpic" src = "assets/images/air.webp" alt = "Air">
-                    <img class = "steelpic" src = "assets/images/steel.webp" alt = "Steel">
+                    <img id = "questionmark" class = "active" src = "assets/images/questionmark.png" alt = "Question Mark">
+                    <img id = "water" class = "inactive" src="assets/images/water.webp" alt = "Water">
+                    <img id = "fire" class = "inactive" src = "assets/images/fire.webp" alt = "Fire">
+                    <img id = "earth" class = "inactive" src = "assets/images/earth.webp" alt = "Earth">
+                    <img id = "air" class = "inactive" src = "assets/images/air.webp" alt = "Air">
+                    <img id = "steel" class = "inactive" src = "assets/images/steel.webp" alt = "Steel">
                 </div>    
             </div>
         </div>
