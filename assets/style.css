@@ -42,6 +42,36 @@ header{
     justify-content: space-evenly;
 }
 
+.waterpic{
+    display: none;
+    height: 10rem;
+    width: 10rem;
+}
+
+.firepic{
+    display: none;
+    height: 10rem;
+    width: 10rem;
+}
+
+.earthpic{
+    display: none;
+    height: 10rem;
+    width: 10rem;
+}
+
+.airpic{
+    display: none;
+    height: 10rem;
+    width: 10rem;
+}
+
+.steelpic{
+    display: block;
+    height: 10rem;
+    width: 10rem;
+}
+
 #playerSelects, #computerSelects{
     display: flex;
     flex-direction: column;

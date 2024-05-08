@@ -10,20 +10,20 @@ function gameManager(playerChoice){
     }else{
     switch (playerChoice){
         case 'water':
-            result = (computerSelects === 'fire') ? alert('You Win!') : alert('You Lose!')
-            result = (computerSelects === 'steel') ? alert('You Win!') : alert('You Lose!')
+            result = (computerSelects === 'fire' || computerSelects === 'steel') ? alert('You Win!') : alert('You Lose!');
+            break;
         case 'fire':
-            result = (computerSelects === 'air') ? alert('You Win!') : alert('You Lose!')
-            result = (computerSelects === 'steel') ? alert('You Win!') : alert('You Lose!')
+            result = (computerSelects === 'air' || computerSelects === 'steel') ? alert('You Win!') : alert('You Lose!');
+            break;
         case 'earth':
-            result = (computerSelects === 'water') ? alert('You Win!') : alert('You Lose!')
-            result = (computerSelects === 'fire') ? alert('You Win!') : alert('You Lose!')
+            result = (computerSelects === 'water' || computerSelects === 'fire') ? alert('You Win!') : alert('You Lose!');
+            break;
         case 'air':
-            result = (computerSelects === 'water') ? alert('You Win!') : alert('You Lose!')
-            result = (computerSelects === 'earth') ? alert('You Win!') : alert('You Lose!')
+            result = (computerSelects === 'water' || computerSelects === 'earth') ? alert('You Win!') : alert('You Lose!');
+            break;
         case 'steel':
-        result = (computerSelects === 'air') ? alert('You Win!') : alert('You Lose!')
-        result = (computerSelects === 'earth') ? alert('You Win!') : alert('You Lose!')  
+        result = (computerSelects === 'air' || computerSelects === 'earth') ? alert('You Win!') : alert('You Lose!');
+            break;  
     }
 }
 }
