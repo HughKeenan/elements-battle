@@ -42,6 +42,12 @@ header{
     justify-content: space-evenly;
 }
 
+.questionmark{
+    display: block;
+    height: 10rem;
+    width: 10rem;
+}
+
 .waterpic{
     display: none;
     height: 10rem;
@@ -67,7 +73,7 @@ header{
 }
 
 .steelpic{
-    display: block;
+    display: none;
     height: 10rem;
     width: 10rem;
 }

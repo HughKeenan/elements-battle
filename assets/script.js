@@ -27,3 +27,21 @@ function gameManager(playerChoice){
     }
 }
 }
+
+function setPicture(playerChoice){
+    let waterpic = document.getElementsByClassName('waterpic');
+    let firepic = document.getElementsByClassName('firepic');
+    let earthpic = document.getElementsByClassName('earthpic');
+    let airpic = document.getElementsByClassName('airpic');
+    let steelpic = document.getElementsByClassName('steelpic');
+    let questionmark = document.getElementsByClassName('questionmark');
+
+    if (playerChoice === 'water'){
+        waterpic.style.display = 'block';
+        questionmark.style.display = 'none';
+    }
+    if (computerSelects === 'water'){
+        waterpic.style.display = 'block';
+        questionmark.style.display = 'none';
+    }
+}
