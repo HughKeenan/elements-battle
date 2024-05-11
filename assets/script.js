@@ -15,6 +15,10 @@ const aero = document.getElementById('aero')
 const steel = document.getElementById('steel')
 const iron = document.getElementById('iron')
 
+
+/**
+ * Manages interactions between the options chosen by the player and the computer
+ */
 function gameManager(playerChoice){
     let computerSelects = options[Math.floor(Math.random()*5)]
     setPicture(computerSelects);
@@ -42,6 +46,9 @@ function gameManager(playerChoice){
 }
 }
 
+/**
+ * Sets image displayed on player side of the game screen
+ */
 function playerPicture(playerChoice){
     if(playerChoice === 'water'){
         water.classList.remove('inactive')
@@ -101,11 +108,17 @@ function setPicture(){
    }
 }
 
+/**
+ * Increments the "Your Score" item when the player wins a round
+ */
 function playerScore(){
     let priorScore = parseInt(document.getElementById('playerScore').innerHTML)
     document.getElementById('playerScore').innerHTML = ++priorScore;    
 }
 
+/**
+ * Increments the "Computer Score" item when the player loses a round
+ */
 function computerScore(){
     let prevScore = parseInt(document.getElementById('computerScore').innerHTML)
     document.getElementById('computerScore').innerHTML = ++prevScore;    
