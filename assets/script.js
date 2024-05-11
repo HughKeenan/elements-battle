@@ -16,6 +16,33 @@ const steel = document.getElementById('steel')
 const iron = document.getElementById('iron')
 
 function gameManager(playerChoice){
+    let computerSelects = options[Math.floor(Math.random()*5)]
+    setPicture(computerSelects);
+    console.log(computerSelects)
+    if (playerChoice === computerSelects){
+        console.log("It's a draw!")
+    }else{
+    switch (playerChoice){
+        case 'water':
+            result = (computerSelects === 'fire' || computerSelects === 'steel') ? playerScore() : computerScore();
+            break;
+        case 'fire':
+            result = (computerSelects === 'air' || computerSelects === 'steel') ? playerScore() : computerScore();
+            break;
+        case 'earth':
+            result = (computerSelects === 'water' || computerSelects === 'fire') ? playerScore() : computerScore();
+            break;
+        case 'air':
+            result = (computerSelects === 'water' || computerSelects === 'earth') ? playerScore() : computerScore();
+            break;
+        case 'steel':
+        result = (computerSelects === 'air' || computerSelects === 'earth') ? playerScore() : computerScore();
+            break;  
+    }
+}
+}
+
+function playerPicture(playerChoice){
     if(playerChoice === 'water'){
         water.classList.remove('inactive')
         water.classList.add('active')
@@ -42,32 +69,8 @@ function gameManager(playerChoice){
         questionmark.classList.remove('active')
         questionmark.classList.add('inactive')
     }
+}
 
-    let computerSelects = options[Math.floor(Math.random()*5)]
-    setPicture(computerSelects);
-    console.log(computerSelects)
-    if (playerChoice === computerSelects){
-        console.log("It's a draw!")
-    }else{
-    switch (playerChoice){
-        case 'water':
-            result = (computerSelects === 'fire' || computerSelects === 'steel') ? playerScore() : computerScore();
-            break;
-        case 'fire':
-            result = (computerSelects === 'air' || computerSelects === 'steel') ? playerScore() : computerScore();
-            break;
-        case 'earth':
-            result = (computerSelects === 'water' || computerSelects === 'fire') ? playerScore() : computerScore();
-            break;
-        case 'air':
-            result = (computerSelects === 'water' || computerSelects === 'earth') ? playerScore() : computerScore();
-            break;
-        case 'steel':
-        result = (computerSelects === 'air' || computerSelects === 'earth') ? playerScore() : computerScore();
-            break;  
-    }
-}
-}
 function setPicture(){
    let computerChoice = choices[Math.floor(Math.random()*5)]
    if (computerChoice === 'hydro'){
