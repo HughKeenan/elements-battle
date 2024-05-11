@@ -99,6 +99,11 @@ function setPicture(){
 }
 
 function playerScore(){
-    let priorScore = parseInt(document.getElementById('score').innerHTML)
+    let priorScore = parseInt(document.getElementById('playerScore').innerHTML)
     document.getElementById('playerScore').innerHTML = ++priorScore;    
+}
+
+function computerScore(){
+    let priorScore = parseInt(document.getElementById('computerScore').innerHTML)
+    document.getElementById('computerScore').innerHTML = ++priorScore;    
 }

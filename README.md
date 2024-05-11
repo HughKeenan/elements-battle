@@ -6,5 +6,9 @@ on introduction of a switch statement to govern choice interactions, an error wa
 
 initial attempts to change the pictures displayed according to the player's and computer's choice were unsuccessful. this was remedied through use of classes that changed whether the display of an image was set to none or block, and setting the gameManager function to add or remove these classes to given images depending on what the player chose. A subsequent issue was found in the images only displaying for the player's choice, and the alert arising before the image changed. This was rectified and a subsequent problem emerged in the computer's image not relating to its choice
 
+On adding the function to increment the player's score on a win, initial attempts to implement it were unsuccessful as the call for the score function could not be added successfully to the gameManager function. Subsequent testing revealed that the function to increment the score had not been referencing the correct element in the html. On fixing this, a new bug emerged as the player's score would not increment past 1.
+
 external sources
 computerchoice https://stackoverflow.com/questions/30179489/how-do-i-make-images-change-with-a-rock-paper-scissors-game
+
+lovemeths used as a template for score function
