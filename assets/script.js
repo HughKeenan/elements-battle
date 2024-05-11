@@ -51,7 +51,7 @@ function gameManager(playerChoice){
     }else{
     switch (playerChoice){
         case 'water':
-            result = (computerSelects === 'fire' || computerSelects === 'steel') ? console.log('You Win!') : console.log('You Lose!');
+            result = (computerSelects === 'fire' || computerSelects === 'steel') ? playerScore() : console.log('You Lose!');
             break;
         case 'fire':
             result = (computerSelects === 'air' || computerSelects === 'steel') ? console.log('You Win!') : console.log('You Lose!');
@@ -96,4 +96,9 @@ function setPicture(){
     query.classList.remove('active')
     query.classList.add('inactive')
    }
+}
+
+function playerScore(){
+    let priorScore = parseInt(document.getElementById('score').innerHTML)
+    document.getElementById('playerScore').innerHTML = ++priorScore;    
 }
