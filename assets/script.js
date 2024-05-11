@@ -51,19 +51,19 @@ function gameManager(playerChoice){
     }else{
     switch (playerChoice){
         case 'water':
-            result = (computerSelects === 'fire' || computerSelects === 'steel') ? playerScore() : console.log('You Lose!');
+            result = (computerSelects === 'fire' || computerSelects === 'steel') ? playerScore() : computerScore();
             break;
         case 'fire':
-            result = (computerSelects === 'air' || computerSelects === 'steel') ? console.log('You Win!') : console.log('You Lose!');
+            result = (computerSelects === 'air' || computerSelects === 'steel') ? playerScore() : computerScore();
             break;
         case 'earth':
-            result = (computerSelects === 'water' || computerSelects === 'fire') ? console.log('You Win!') : console.log('You Lose!');
+            result = (computerSelects === 'water' || computerSelects === 'fire') ? playerScore() : computerScore();
             break;
         case 'air':
-            result = (computerSelects === 'water' || computerSelects === 'earth') ? console.log('You Win!') : console.log('You Lose!');
+            result = (computerSelects === 'water' || computerSelects === 'earth') ? playerScore() : computerScore();
             break;
         case 'steel':
-        result = (computerSelects === 'air' || computerSelects === 'earth') ? console.log('You Win!') : console.log('You Lose!');
+        result = (computerSelects === 'air' || computerSelects === 'earth') ? playerScore() : computerScore();
             break;  
     }
 }
@@ -104,6 +104,6 @@ function playerScore(){
 }
 
 function computerScore(){
-    let priorScore = parseInt(document.getElementById('computerScore').innerHTML)
-    document.getElementById('computerScore').innerHTML = ++priorScore;    
+    let prevScore = parseInt(document.getElementById('computerScore').innerHTML)
+    document.getElementById('computerScore').innerHTML = ++prevScore;    
 }
