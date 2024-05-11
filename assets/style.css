@@ -12,6 +12,7 @@ h1, p, button, span, div{
     font-family: Signika Negative;
 }
 
+/*Header & Title*/
 header{
     font-family: Anton;
     display: flex;
@@ -24,6 +25,7 @@ header{
     justify-content: center;
 }
 
+/*Main page content*/
 #rules{
     display: flex;
     flex-direction: column;
