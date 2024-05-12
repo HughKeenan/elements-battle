@@ -2,7 +2,23 @@
 Elements Battle is a webiste that allows users to play a game themed around the interactions of 5 different elements based on  "Rock, Paper Scissors, Lizard, Spock". The site's target user is anyone wishing to play a game with elements of chance.
 
 ## Features
-The site's html has been constructed to provide an uncomplicated layout. Aside from the title, it also contains an explanation of the rules of the game and an area for displaying the player's choice and the computers, as well as a counter to keep track of the player's score and the computer's
+The site's html has been constructed to provide an uncomplicated layout. Aside from the title, it also contains an explanation of the rules of the game and an area for displaying the player's choice and the computers, as well as a counter to keep track of the player's score and the computer's.
+
+### Rules
+Explains how the various interactions work
+![alt text](image.png)
+
+### Options
+Allows the user to select their element for a given round
+![alt text](image-1.png)
+
+### Graphics
+Displays the elements selected by the player and the computer for the round
+![alt text](image-2.png)
+
+### Scoreboard
+Tracks number of player & computer wins
+![alt text](image-3.png)
 
 ## Testing
 Manual testing was conducted after the implementation of the javaScript to govern the interactions of the various elements by selecting each one in turn until the computer had cycled through all of the options to test that they had been implemented correctly. console.log() was used to confirm that these worked
@@ -34,18 +50,20 @@ On adding the function to increment the player's score on a win, initial attempt
 6. moving to the deployments section on the right side of the code page and opening the link from there
 
 ## Credits
-computerchoice https://stackoverflow.com/questions/30179489/how-do-i-make-images-change-with-a-rock-paper-scissors-game
+The following was used as a reference to help solve the bug of the computer displaying the wrong pictures: https://stackoverflow.com/questions/30179489/how-do-i-make-images-change-with-a-rock-paper-scissors-game
 
-lovemaths used as a template for score function
+The functions used in LoveMaths to increment scores were used as a template to achieve the same goal here
 
-https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=697s used to help make gameManager
+The following tutorial was used to help write the gameManager function https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=697s 
 
+The images used in the site were taken from the following sources:
 Water image: https://www.stockio.com/free-icon/nature-icons-water-drop?utm_content=cmp-true
 Fire image: https://stock.adobe.com/search?k=fire+icon&asset_id=235263034
 Earth image: https://www.vecteezy.com/vector-art/9660869-earth-element-nature-vector-round-icon-for-design
 Air image: https://www.vectorstock.com/royalty-free-vector/abstract-air-symbol-vector-18170953
 Steel image: https://www.vecteezy.com/vector-art/35241602-silver-shield-icon-flat-vector-design-heraldic-symbol-award-badge-shape-medieval-metal-weapons
 Question Mark image: https://www.iconsdb.com/white-icons/question-mark-icon.html
+Favicon: https://icons8.com/icons/set/fire
 
 ## Acknowledgements
 I wish to acknowledge my mentor, Alan Bushell, who provided me with feedback and advice throughout this project. I wish also to acknowledge the Code Institute tutors, who provided valuable advice and insight when I had questions
