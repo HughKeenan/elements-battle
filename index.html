@@ -9,7 +9,9 @@
     <link rel = "icon" type = "image/png"  sizes = "96x96" href = "assets/images/icons8-fire-96.png">
 </head>
 <body>
+    <!--Page Header-->
     <header>Elements Battle!</header>
+    <!--Rules section-->
     <main>
         <div>
             <h1 id = "title">Rules</h1>
@@ -21,6 +23,7 @@
             <p>Steel breaks Earth | Earth smothers Fire</p>
             <p>Fire burns Air | Air freezes Water</p>
         </div>
+        <!--Game Controls-->
         <div id = "options">
             <button onclick = "gameManager('water'), playerPicture('water')">Water</button>
             <button onclick = "gameManager('fire'), playerPicture('fire')">Fire</button>
@@ -28,6 +31,7 @@
             <button onclick = "gameManager('air'), playerPicture('air')">Air</button>
             <button onclick = "gameManager('steel'), playerPicture('steel')">Steel</button>
         </div>
+        <!--Game Images-->
         <div id = "gameArea">
             <div id = playerSelects>
                 <p>Your Choice</p>
@@ -40,7 +44,7 @@
                     <img id = "steel" class = "inactive" src = "assets/images/steel.webp" alt = "Steel"> 
                 </div>
             </div>
-            <div id = computerSelects>
+            <div id = "computerSelects">
                 <p>Computer Choice</p>
                 <div>
                     <img id = "query" class = "active" src = "assets/images/questionmark.png" alt = "Question Mark">
@@ -52,12 +56,13 @@
                 </div>    
             </div>
         </div>
-        <div id = scoreArea>
+        <!--Scores-->
+        <div id = "scoreArea">
             <div>Your Score:
-                <span id = playerScore>0</span>
+                <span id = "playerScore">0</span>
             </div>
             <div>Computer Score:
-                <span id = computerScore>0</span>
+                <span id = "computerScore">0</span>
             </div>
         </div> 
     </main>
