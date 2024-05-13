@@ -198,8 +198,8 @@ function playerScore(){
     let priorScore = parseInt(document.getElementById('playerScore').innerHTML);
     document.getElementById('playerScore').innerHTML = ++priorScore;    
     if(priorScore === 5){
-        if(alert('Congratulations, You Win!')){
-        }else window.location.reload();
+        setTimeout(() => { if(alert('Congratulations, You Win!')){
+        }else window.location.reload() }, 500);
     }
     
 }
@@ -210,9 +210,9 @@ function playerScore(){
 function computerScore(){
     let prevScore = parseInt(document.getElementById('computerScore').innerHTML);
     document.getElementById('computerScore').innerHTML = ++prevScore;
-    if(prevScore === 5){
-        if(alert('Game Over, You Lose!')){
-        }else window.location.reload();
+    if(prevScore === 1){
+        setTimeout(() => { if(alert('Game Over, You Lose!')){
+        }else window.location.reload() }, 500);
     }   
 }
 
