@@ -32,6 +32,11 @@ header{
     align-items: center;
 }
 
+#rules>p, #rules>h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #options{
     display: flex;
     flex-direction: row;

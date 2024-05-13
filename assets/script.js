@@ -197,6 +197,9 @@ function setPicture(computerSelects){
 function playerScore(){
     let priorScore = parseInt(document.getElementById('playerScore').innerHTML);
     document.getElementById('playerScore').innerHTML = ++priorScore;    
+    if(priorScore === 5){
+        alert('Congratulations, You Win!');
+    }
 }
 
 /**
@@ -204,6 +207,9 @@ function playerScore(){
  */
 function computerScore(){
     let prevScore = parseInt(document.getElementById('computerScore').innerHTML);
-    document.getElementById('computerScore').innerHTML = ++prevScore;    
+    document.getElementById('computerScore').innerHTML = ++prevScore;
+    if(prevScore === 5){
+        alert('Game Over, You Lose!')
+    }    
 }
 
