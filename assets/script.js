@@ -210,7 +210,7 @@ function playerScore(){
 function computerScore(){
     let prevScore = parseInt(document.getElementById('computerScore').innerHTML);
     document.getElementById('computerScore').innerHTML = ++prevScore;
-    if(prevScore === 1){
+    if(prevScore === 5){
         setTimeout(() => { if(alert('Game Over, You Lose!')){
         }else window.location.reload() }, 500);
     }   
