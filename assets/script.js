@@ -12,7 +12,16 @@ const air = document.getElementById('air');
 const aero = document.getElementById('aero');
 const steel = document.getElementById('steel');
 const iron = document.getElementById('iron');
+var rulesModal = document.getElementById("rulesModal");
 
+ function showModal() {
+    rulesModal.style.display = "block";
+  }
+  
+ 
+function closeModal() {
+    rulesModal.style.display = "none";
+  }
 
 /**
  * Manages interactions between the options chosen by the player and the computer
@@ -201,7 +210,6 @@ function playerScore(){
         setTimeout(() => { if(alert('Congratulations, You Win!')){
         }else window.location.reload() }, 500);
     }
-    
 }
 
 /**
@@ -211,7 +219,7 @@ function computerScore(){
     let prevScore = parseInt(document.getElementById('computerScore').innerHTML);
     document.getElementById('computerScore').innerHTML = ++prevScore;
     if(prevScore === 5){
-        setTimeout(() => { if(alert('Game Over, You Lose!')){
+        setTimeout(() => {if(alert('Game Over, You Lose!')){
         }else window.location.reload() }, 500);
     }   
 }

@@ -27,10 +27,46 @@ header{
 }
 
 /*Main page content*/
-#rules{
+/*#rules{
     display: flex;
     flex-direction: column;
     align-items: center;
+}*/
+
+#rulesButton{
+    height: 100px;
+    width: 200px;
+    font-size: 250%;
+}
+
+#modalBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.rulesModal{
+    display:none;
+    width: 75%;
+    height: 50%;
+}
+
+#modalContent{
+    background-color: #ffffff;
+    margin: 5% auto; 
+    padding: 10px;
+    border: 3px solid #050505;
+    width: 50%;
+    text-align: center;
+}
+
+.closeModal{
+    color: #000000;
+    float: right;
+    font-size: 40px;
 }
 
 #rules>p, #rules>h2, h1{
@@ -61,7 +97,7 @@ header{
     width: 10rem;
 }
 
-#playerSelects, #computerSelects{
+#playerSelects, #computerSelects, #playerDiv, #computerDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
