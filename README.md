@@ -63,6 +63,8 @@ The following was used to help implement the vicotry/game over states: https://s
 
 The following was used to resolve the order of operations bug on a win/loss https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console.
 
+The following was used as a reference for the modal:https://www.w3schools.com/howto/howto_css_modals.asp
+
 The images used in the site were taken from the following sources:
 Water image: https://www.stockio.com/free-icon/nature-icons-water-drop?utm_content=cmp-true
 Fire image: https://stock.adobe.com/search?k=fire+icon&asset_id=235263034
