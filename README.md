@@ -40,6 +40,9 @@ Initial attempts to change the pictures displayed according to the player's and 
 
 On adding the function to increment the player's score on a win, initial attempts to implement it were unsuccessful as the call for the score function could not be added successfully to the gameManager function. Subsequent testing revealed that the function to increment the score had not been referencing the correct element in the html. On fixing this, a new bug emerged as the player's score would not increment past 1. On adding the function to increase the computer's score, it initially didn't work. On re-examination of the code, the line in the function to update the computer's score that updated the element's inner html was not referencing the correct variable. On correction, it worked properly, and on implementation of both functions across all outcomes, the scores continued past 1. 
 
+The functions to increase the player's and computer's scores were modified to introduce a "lives" system to make the game more interesting, with the first to 5 victories being the winner. There was an issue with the order of operations in this, as the alert to say a game was won or lost was declared before the score rolled over to 5. (SOLUTION). The functions were then further modified to reset the page on closing the alert. but the order of operations was again an issue, and the player could no longer see the outcome of the final round (SOLUTION)
+
+
 ## Deplyoment
 ### This was done by using the following steps:
 1. Going to the Settings page in the repository on GitHub
