@@ -40,7 +40,7 @@ Initial attempts to change the pictures displayed according to the player's and 
 
 On adding the function to increment the player's score on a win, initial attempts to implement it were unsuccessful as the call for the score function could not be added successfully to the gameManager function. Subsequent testing revealed that the function to increment the score had not been referencing the correct element in the html. On fixing this, a new bug emerged as the player's score would not increment past 1. On adding the function to increase the computer's score, it initially didn't work. On re-examination of the code, the line in the function to update the computer's score that updated the element's inner html was not referencing the correct variable. On correction, it worked properly, and on implementation of both functions across all outcomes, the scores continued past 1. 
 
-The functions to increase the player's and computer's scores were modified to introduce a "lives" system to make the game more interesting, with the first to 5 victories being the winner. There was an issue with the order of operations in this, as the alert to say a game was won or lost was declared before the score rolled over to 5. (SOLUTION). The functions were then further modified to reset the page on closing the alert. but the order of operations was again an issue, and the player could no longer see the outcome of the final round (SOLUTION)
+The functions to increase the player's and computer's scores were modified to introduce a "lives" system to make the game more interesting, with the first to 5 victories being the winner. There was an issue with the order of operations in this, as the alert to say a game was won or lost was declared before the score rolled over to 5. (SOLUTION). The functions were then further modified to reset the page on closing the alert. but the order of operations was again an issue, and the player could no longer see the outcome of the final round. (SOLUTION) Additionally, the alert was being displayed twice. This was because the alert was writteon on its own as well as being part of the if statement to reset the page. On removing the one on its own. the alert only displayed once.
 
 
 ## Deplyoment
@@ -58,6 +58,8 @@ The following was used as a reference to help solve the bug of the computer disp
 The functions used in LoveMaths to increment scores were used as a template to achieve the same goal here
 
 The following tutorial was used to help write the gameManager function https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=697s 
+
+The following was used to help implement the vicotry/game over states: https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
 
 The images used in the site were taken from the following sources:
 Water image: https://www.stockio.com/free-icon/nature-icons-water-drop?utm_content=cmp-true
