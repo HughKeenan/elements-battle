@@ -1,5 +1,6 @@
 # Elements Battle
-Elements Battle is a webiste that allows users to play a game themed around the interactions of 5 different elements based on  "Rock, Paper Scissors, Lizard, Spock". The site's target user is anyone wishing to play a game with elements of chance.
+Elements Battle is a webiste that allows users to play a game themed around the interactions of 5 different elements based on  "Rock, Paper Scissors, Lizard, Spock". The site's target user is anyone wishing to play a game with elements of chance, and is suitable for all ages. The game's simple premise would suit anyone who is new to computer games, but can be enjoyed by anyone.
+![alt text](image-5.png)
 
 ## Features
 The site's html has been constructed to provide an uncomplicated layout. Aside from the title, it also contains an explanation of the rules of the game and an area for displaying the player's choice and the computers, as well as a counter to keep track of the player's score and the computer's.
@@ -27,10 +28,13 @@ Tracks number of player & computer wins.
 ![alt text](image-4.png)
 
 ## Testing
-Manual testing was conducted after the implementation of the javaScript to govern the interactions of the various elements by selecting each one in turn until the computer had cycled through all of the options to test that they had been implemented correctly. console.log() was used to confirm that these worked
+Manual testing was conducted after the implementation of the javaScript to govern the interactions of the various elements by selecting each one in turn until the computer had cycled through all of the options to test that they had been implemented correctly. console.log() was used to confirm that these worked.
+
+The site was tested in Google Chrome, Microsoft Edge and Firefox for functionality and responsivity, and worked equally well in each browser. The alerts to declare loss or victory appeared as expected and the game reset without difficulty.
 
 |Test|Outcome|
 |Testing button for each element to ensure each selected the right one|Passed|
+|Testing image alt text by removing characters from the html link to the image|Passed|
 
 ### Validation
 The HTML, CSS and javaScript were each run through the relevant validator websites, W3C for HTML and JavaScript, Jigsaw for CSS 
