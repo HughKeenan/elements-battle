@@ -7,6 +7,7 @@ The site's html has been constructed to provide an uncomplicated layout. Aside f
 
 ### Title
 The game's name, prominently displayed at the top of the page:
+
 ![alt text](image.png)
 
 ### Rules
@@ -38,6 +39,11 @@ Lighthouse testing was conducted also:
 |Test|Outcome|
 |Testing button for each element to ensure each selected the right one|Passed|
 |Testing image alt text by removing characters from the html link to the image|Passed|
+|Modal displays when called|Passed|
+|Game areas change from horizontal to vertical alignment on mobile screens|Passed|
+|Score increments on player or computer winning a draw|Passed|
+|Alert to end the round and reset the page appears after the result of the final draw|Passed|
+
 
 ### Validation
 The HTML, CSS and javaScript were each run through the relevant validator websites, W3C for HTML and javaScript, Jigsaw for CSS 
@@ -64,37 +70,34 @@ On adding the function to increment the player's score on a win, initial attempt
 
 The functions to increase the player's and computer's scores were modified to introduce a "lives" system to make the game more interesting, with the first to 5 victories being the winner. There was an issue with the order of operations in this, as the alert to say a game was won or lost was declared before the score rolled over to 5. (SOLUTION). The functions were then further modified to reset the page on closing the alert. but the order of operations was again an issue, and the player could no longer see the outcome of the final round. This was resolved by setting a delay on the alert through the setTimeout method to allow the images to load in first. Additionally, the alert was being displayed twice. This was because the alert was writteon on its own as well as being part of the if statement to reset the page. On removing the one on its own. the alert only displayed once.
 
-
 ## Deplyoment
 ### This was done by using the following steps:
-1. Going to the Settings page in the repository on GitHub
-2. Selecting Pages on the menu on the left hand side of that page
-3. Selecting "Deploy from a Branch" in the section marked Sourcxe and ensuring that the branch was set to main and the folder was set to /root.
-4. Selecting save under branch
-5. Navigating back to the repository's code page, then refreshing after a few minutes
-6. moving to the deployments section on the right side of the code page and opening the link from there
+1. Going to the Settings page in the repository, and there selecting Pages
+2. Selecting "Deploy from a Branch" under Source, from there setting branch to main and folder to /root, then saving the chosen branch
+3. Returning to the code page, and wait 5 minutes before refreshing.
+4. Opening deployments on the right of the code page, selecting it and then opening the site once inside
 
 ## Credits
-The following was used as a reference to help solve the bug of the computer displaying the wrong pictures: https://stackoverflow.com/questions/30179489/how-do-i-make-images-change-with-a-rock-paper-scissors-game
+1. The following was used as a reference to help solve the bug of the computer displaying the wrong pictures: https://stackoverflow.com/questions/30179489/how-do-i-make-images-change-with-a-rock-paper-scissors-game
 
-The functions used in LoveMaths to increment scores were used as a template to achieve the same goal here
+2. The functions used in LoveMaths to increment scores were used as a template to achieve the same goal here.
 
-The following tutorial was used to help write the gameManager function https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=697s 
+3. The following tutorial was used to help write the gameManager function https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=697s 
 
-The following was used to help implement the vicotry/game over states: https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
+4. The following was used to help implement the vicotry/game over states: https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
 
-The following was used to resolve the order of operations bug on a win/loss https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console.
+5. The following was used to resolve the order of operations bug on a win/loss https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console.
 
-The following was used as a reference for the modal:https://www.w3schools.com/howto/howto_css_modals.asp
+6. The following was used as a reference for the modal:https://www.w3schools.com/howto/howto_css_modals.asp
 
-The images used in the site were taken from the following sources:
-Water image: https://www.stockio.com/free-icon/nature-icons-water-drop?utm_content=cmp-true
-Fire image: https://stock.adobe.com/search?k=fire+icon&asset_id=235263034
-Earth image: https://www.vecteezy.com/vector-art/9660869-earth-element-nature-vector-round-icon-for-design
-Air image: https://www.vectorstock.com/royalty-free-vector/abstract-air-symbol-vector-18170953
-Steel image: https://www.vecteezy.com/vector-art/35241602-silver-shield-icon-flat-vector-design-heraldic-symbol-award-badge-shape-medieval-metal-weapons
-Question Mark image: https://www.iconsdb.com/white-icons/question-mark-icon.html
-Favicon: https://icons8.com/icons/set/fire
+7. The images used in the site were taken from the following sources:
+    a. Water image: https://www.stockio.com/free-icon/nature-icons-water-drop?utm_content=cmp-true
+    b. Fire image: https://stock.adobe.com/search?k=fire+icon&asset_id=235263034
+    c. Earth image: https://www.vecteezy.com/vector-art/9660869-earth-element-nature-vector-round-icon-for-design
+    d. Air image: https://www.vectorstock.com/royalty-free-vector/abstract-air-symbol-vector-18170953
+    e. Steel image: https://www.vecteezy.com/vector-art/35241602-silver-shield-icon-flat-vector-design-heraldic-symbol-award-badge-shape-medieval-metal-weapons
+    f. Question Mark image: https://www.iconsdb.com/white-icons/question-mark-icon.html
+    g. Favicon: https://icons8.com/icons/set/fire
 
 ## Acknowledgements
 I wish to acknowledge my mentor, Alan Bushell, who provided me with feedback and advice throughout this project. I wish also to acknowledge the Code Institute tutors, who provided valuable advice and insight when I had questions
