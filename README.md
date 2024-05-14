@@ -89,7 +89,7 @@ The functions to increase the player's and computer's scores were modified to in
 
 3. The following tutorial was used to help write the gameManager function https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=697s 
 
-4. The following was used to help implement the vicotry/game over states: https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
+4. The following was used to help implement the victory/game over states: https://stackoverflow.com/questions/16955019/how-to-reload-a-page-after-the-ok-click-on-the-alert-page
 
 5. The following was used to resolve the order of operations bug on a win/loss https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console.
 
