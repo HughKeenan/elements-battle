@@ -202,6 +202,7 @@ function setPicture(computerSelects){
 
 /**
  * Increments the "Your Score" item when the player wins a round
+ * Declares computer victory if player score reaches 5 and resets the game
  */
 function playerScore(){
     let priorScore = parseInt(document.getElementById('playerScore').innerHTML);
@@ -214,6 +215,7 @@ function playerScore(){
 
 /**
  * Increments the "Computer Score" item when the player loses a round
+ * Declares computer victory if computer score reaches 5 and resets the game
  */
 function computerScore(){
     let prevScore = parseInt(document.getElementById('computerScore').innerHTML);

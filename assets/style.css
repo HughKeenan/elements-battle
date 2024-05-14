@@ -12,6 +12,11 @@ h1, p, button, span, div{
     font-family: Signika Negative;
 }
 
+p, span, #playerDiv, #computerDiv{
+    font-size: 150%;
+    margin-top: 10px;
+}
+
 /*Header & Title*/
 header{
     font-family: Anton;
@@ -27,11 +32,12 @@ header{
 }
 
 /*Main page content*/
-/*#rules{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
+
+.gameButton{
+    height: 40px;
+    width: 50px;
+    font-size: 90%;
+}
 
 #rulesButton{
     height: 100px;
@@ -50,7 +56,7 @@ header{
 
 .rulesModal{
     display:none;
-    width: 75%;
+    width: 125%;
     height: 50%;
 }
 
@@ -93,8 +99,8 @@ header{
 
 .active{
     display: block;
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 15rem;
 }
 
 #playerSelects, #computerSelects, #playerDiv, #computerDiv{
