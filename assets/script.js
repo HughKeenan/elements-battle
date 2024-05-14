@@ -14,11 +14,16 @@ const steel = document.getElementById('steel');
 const iron = document.getElementById('iron');
 var rulesModal = document.getElementById("rulesModal");
 
+/**
+ * Shows the modal when the "Rules button is clicked"
+ */
  function showModal() {
     rulesModal.style.display = "block";
   }
   
- 
+/**
+ * Closes the modal when the "x within it is clicked"
+ */ 
 function closeModal() {
     rulesModal.style.display = "none";
   }
@@ -49,7 +54,7 @@ function gameManager(playerChoice){
             result = (computerSelects === 'water' || computerSelects === 'earth') ? playerScore() : computerScore();
             break;
         case 'steel':
-        result = (computerSelects === 'air' || computerSelects === 'earth') ? playerScore() : computerScore();
+            result = (computerSelects === 'air' || computerSelects === 'earth') ? playerScore() : computerScore();
             break;  
     }
 }

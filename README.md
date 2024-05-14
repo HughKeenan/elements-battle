@@ -32,12 +32,24 @@ Manual testing was conducted after the implementation of the javaScript to gover
 
 The site was tested in Google Chrome, Microsoft Edge and Firefox for functionality and responsivity, and worked equally well in each browser. The alerts to declare loss or victory appeared as expected and the game reset without difficulty.
 
+Lighthouse testing was conducted also:
+![alt text](image-6.png)
+
 |Test|Outcome|
 |Testing button for each element to ensure each selected the right one|Passed|
 |Testing image alt text by removing characters from the html link to the image|Passed|
 
 ### Validation
-The HTML, CSS and javaScript were each run through the relevant validator websites, W3C for HTML and JavaScript, Jigsaw for CSS 
+The HTML, CSS and javaScript were each run through the relevant validator websites, W3C for HTML and javaScript, Jigsaw for CSS 
+
+HTML:
+![alt text](image-7.png)
+
+CSS:
+![alt text](image-8.png)
+
+javaScript
+![alt text](image-9.png)
 
 ## Bugs
 Alignment of score areas was not in complete sync with picture areas, this was due to  them being in a separate div and not arrayed in a column
