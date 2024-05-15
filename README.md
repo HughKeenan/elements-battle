@@ -1,29 +1,29 @@
 # Elements Battle
 Elements Battle is a webiste that allows users to play a game themed around the interactions of 5 different elements based on  "Rock, Paper Scissors, Lizard, Spock". The site's target user is anyone wishing to play a game with elements of chance, and is suitable for all ages. The game's simple premise would suit anyone who is new to computer games, but can be enjoyed by anyone.
-![alt text](images/readme-images/image-1.png)
+![alt text](assets/readme-images/image-1.png)
 
 ## Features
 The site's html has been constructed to provide an uncomplicated layout. Aside from the title, it also contains an explanation of the rules of the game and an area for displaying the player's choice and the computers, as well as a counter to keep track of the player's score and the computer's.
 
 ### Title
 The game's name, prominently displayed at the top of the page, along with a tagline to let the user know it's a game of chance:
-![alt text](images/readme-images/image-2.png)
+![alt text](assets/readme-images/image-2.png)
 
 ### Rules
 The Modal button at the top of the screen can be opened for an explaination of how the various interactions work.
-![alt text](images/readme-images/image.png)
+![alt text](assets/readme-images/image.png)
 
 ### Options
 Allows the user to select their element for a given round.
-![alt text](images/readme-images/image-3.png)
+![alt text](assets/readme-images/image-3.png)
 
 ### Graphics
 Displays the elements selected by the player and the computer for the round.
-![alt text](images/readme-images/image-4.png)
+![alt text](assets/readme-images/image-4.png)
 
 ### Scoreboard
 Tracks number of player & computer wins.
-![alt text](images/readme-images/image-5.png)
+![alt text](assets/readme-images/image-5.png)
 
 ### Potential Features
 Due to time constraints, I was unable to implement a feature to enable the player to enter a username.
