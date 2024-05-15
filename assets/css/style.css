@@ -1,7 +1,6 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Jaro:opsz@6..72&family=Signika+Negative:wght@300..700&display=swap');
 
-
 /*General Rules*/
 main{
     border: 2px solid;
@@ -33,10 +32,8 @@ header{
 
 /*Main page content*/
 
-.gameButton{
-    height: 40px;
-    width: 50px;
-    font-size: 90%;
+#welcome{
+    text-align: center;
 }
 
 #rulesButton{
@@ -75,10 +72,10 @@ header{
     font-size: 40px;
 }
 
-#rules>p, #rules>h2, h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+.gameButton{
+    height: 40px;
+    width: 50px;
+    font-size: 90%;
 }
 
 #options{

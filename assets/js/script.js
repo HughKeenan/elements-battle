@@ -1,5 +1,4 @@
 const options = ["water","earth","fire","air","steel"];
-const computerSelects = document.getElementById('computerSelects');
 const questionmark = document.getElementById('questionmark');
 const query = document.getElementById('query');
 const water = document.getElementById('water');
@@ -12,7 +11,7 @@ const air = document.getElementById('air');
 const aero = document.getElementById('aero');
 const steel = document.getElementById('steel');
 const iron = document.getElementById('iron');
-var rulesModal = document.getElementById("rulesModal");
+const rulesModal = document.getElementById("rulesModal");
 
 /**
  * Shows the modal when the "Rules button is clicked"
@@ -35,29 +34,28 @@ function gameManager(playerChoice){
     let computerSelects = options[Math.floor(Math.random()*5)];
 
     setPicture(computerSelects);
-    
-    console.log(computerSelects);
-    if (playerChoice === computerSelects){
-        console.log("It's a draw!");
+
+    if(playerChoice === computerSelects){
+        setTimeout(() => alert("Draw, No Score!"),100);
     }else{
-    switch (playerChoice){
-        case 'water':
-            result = (computerSelects === 'fire' || computerSelects === 'steel') ? playerScore() : computerScore();
-            break;
-        case 'fire':
-            result = (computerSelects === 'air' || computerSelects === 'steel') ? playerScore() : computerScore();
-            break;
-        case 'earth':
-            result = (computerSelects === 'water' || computerSelects === 'fire') ? playerScore() : computerScore();
-            break;
-        case 'air':
-            result = (computerSelects === 'water' || computerSelects === 'earth') ? playerScore() : computerScore();
-            break;
-        case 'steel':
-            result = (computerSelects === 'air' || computerSelects === 'earth') ? playerScore() : computerScore();
-            break;  
-    }
-}
+        switch (playerChoice){
+                case 'water':
+                    result = (computerSelects === 'fire' || computerSelects === 'steel') ? playerScore() : computerScore();
+                    break;
+                case 'fire':
+                    result = (computerSelects === 'air' || computerSelects === 'steel') ? playerScore() : computerScore();
+                    break;
+                case 'earth':
+                    result = (computerSelects === 'water' || computerSelects === 'fire') ? playerScore() : computerScore();
+                    break;
+                case 'air':
+                    result = (computerSelects === 'water' || computerSelects === 'earth') ? playerScore() : computerScore();
+                    break;
+                case 'steel':
+                    result = (computerSelects === 'air' || computerSelects === 'earth') ? playerScore() : computerScore();
+                    break;  
+                }
+        }
 }
 
 /**
@@ -207,14 +205,14 @@ function setPicture(computerSelects){
 
 /**
  * Increments the "Your Score" item when the player wins a round
- * Declares computer victory if player score reaches 5 and resets the game
+ * Declares player victory if player score reaches 5 and resets the game
  */
 function playerScore(){
     let priorScore = parseInt(document.getElementById('playerScore').innerHTML);
     document.getElementById('playerScore').innerHTML = ++priorScore;    
     if(priorScore === 5){
         setTimeout(() => { if(alert('Congratulations, You Win!')){
-        }else window.location.reload() }, 500);
+        }else window.location.reload(); }, 100);
     }
 }
 
@@ -227,7 +225,7 @@ function computerScore(){
     document.getElementById('computerScore').innerHTML = ++prevScore;
     if(prevScore === 5){
         setTimeout(() => {if(alert('Game Over, You Lose!')){
-        }else window.location.reload() }, 500);
-    }   
+        }else window.location.reload(); }, 100);
+    }  
 }
 
