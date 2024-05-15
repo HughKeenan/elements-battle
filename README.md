@@ -1,25 +1,25 @@
 # Elements Battle
 Elements Battle is a webiste that allows users to play a game themed around the interactions of 5 different elements based on  "Rock, Paper Scissors, Lizard, Spock". The site's target user is anyone wishing to play a game with elements of chance, and is suitable for all ages. The game's simple premise would suit anyone who is new to computer games, but can be enjoyed by anyone.
-![alt text](assets/readme-images/image-1.png)
+![Site responsiveness view](assets/readme-images/image-1.png)
 
 ## Features
 The site's html has been constructed to provide an uncomplicated layout. Aside from the title, it also contains an explanation of the rules of the game and an area for displaying the player's choice and the computers, as well as a counter to keep track of the player's score and the computer's.
 
 ### Title
 The game's name, prominently displayed at the top of the page, along with a tagline to let the user know it's a game of chance:
-![alt text](assets/readme-images/image-2.png)
+![Header and tagline](assets/readme-images/image-2.png)
 
 ### Rules
 The Modal button at the top of the screen can be opened for an explaination of how the various interactions work.
-![alt text](assets/readme-images/image.png)
+![Modal and button](assets/readme-images/image.png)
 
 ### Options
 Allows the user to select their element for a given round.
-![alt text](assets/readme-images/image-3.png)
+![Player's options](assets/readme-images/image-3.png)
 
 ### Graphics
 Displays the elements selected by the player and the computer for the round.
-![alt text](assets/readme-images/image-4.png)
+![Image display](assets/readme-images/image-4.png)
 
 ### Scoreboard
 Tracks number of player & computer wins.
@@ -34,8 +34,8 @@ Manual testing was conducted after the implementation of the javaScript to gover
 The site was tested in Google Chrome, Microsoft Edge and Firefox for functionality and responsivity, and worked equally well in each browser. The alerts to declare loss or victory appeared as expected and the game reset without difficulty.
 
 Lighthouse testing was conducted also:
+![Lighthouse test results](assets/readme-images/image-6.png)
 
-![alt text](image-6.png)
 
 |Test|Outcome|
 |----|----|
@@ -51,13 +51,13 @@ Lighthouse testing was conducted also:
 The HTML, CSS and javaScript were each run through the relevant validator websites, W3C for HTML and javaScript, Jigsaw for CSS 
 
 HTML:
-![alt text](image-7.png)
+![HMTML validation result](assets/readme-images/image-7.png)
 
 CSS:
-![alt text](image-8.png)
+![CSS validation result](assets/readme-images/image-8.png)
 
 javaScript
-![alt text](image-9.png)
+![javaScript validation result](assets/readme-images/image-9.png)
 
 ## Bugs
 Alignment of score areas was not in complete sync with picture areas, this was due to  them being in a separate div and not arrayed in a column. This was recitified by moving the score into the same div as the picture. 
